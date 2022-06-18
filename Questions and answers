@@ -1,0 +1,21 @@
+Find the reason and input file that causing the server load.
+Find out and kill zombie process  Ans: lsof | egrep "Z|defunct"
+                                       ps -o ppid=parentprocess id
+                                       
+ Change and the system kernel and boot   Ans: grep 'menuentry ' /boot/grub2/grub.cfg | cut -f 2 -d "'" | nl -v 0
+  
+                                               grub2-set-default 1
+                                               grub2-mkconfig -o /boot/grub2/grub.cfg
+                                               grub2-reboot 'Amazon Linux (5.10.109-104.500.amzn2.x86_64)'
+                                               reboot
+                                               uname -r
+                                     
+ Display Kernel modules, and load and remove a specific module.   Ans: lsmod                                   
+ powerpath and mutlipath
+ 
+ Extend swap space without off the existing swap   Ans: https://www.2daygeek.com/add-extend-swap-space-linux/
+ 
+ Create LVM, extend and reduce it.
+  Print a particular character from lines
+  Why does df show greater disk usage than DU
+ 
